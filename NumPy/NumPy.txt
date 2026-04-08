@@ -1,0 +1,104 @@
+Themes:
+Numpy bilan tanishuv
+List va Array
+Numpy Array
+Amaliyot Arrays
+Ma'lumot tur
+Indekslash va kesish
+Boolean indekslash
+Amaliyot Arraylar ustida amallar
+Array o'qlarini almashtirish
+Universal funksiyalar
+Mantiqiy shart operatori
+Arifmetik amallar
+Matematik va statistik amallar
+Tartiblash
+Takrorlanmas va boshqa amallar
+Fayllar bilan ishlash
+Chiziqli algebra
+Yakuniy amaliyot
+
+Major themes:
+Intro
+Array
+Amaliyot
+Indexing
+Amaliyot
+Arifmetika va funksiyalar
+Tartiblash
+Fayllar bilan ishlash
+Amaliyot
+
+arr_name.ndim - arr_name arrayining o'lchovini beradi
+arr_name.shape - arr_name arrayining qator va ustunlar sonini beradi
+arr_name.size - arr_name arrayi ichidagi ma'lumotlar soni
+arr_name.dtype - arr_nameni turini ko'rsatadi
+arr_name.T - arr_nameni shakligini o'zgartiradi
+
+arr = np.array([1,2,3]) - oddiygina array yaratish uchun
+np.random.rand(n,m) - n ta tasodifiy sondan iborat bo'lgan m qatorlik array yaratadi
+np.random.permutation(size=100) - 100 ta sonni aralashtirilgan versiyasini qaytaradi
+np.random.binomial(n=1, p=0.99, size=100) - n da elementlar oralig'i beriladi, p ehtimolligi beriladi, size massiv o'lchami
+np.random.poisson(lam=5, size=10) - lam o'rtacha qiymatni beradi, size massiv o'lchami
+np.random.uniform(low=0.0, high=1.0, size=None) - low minimal qiymat, high maximal qiymat, size massiv o'lchami
+np.random.logistic(loc=0.0, scale=1.0, size=None) - loc markaziy qiymat, scale og'ish, size massiv o'lchami
+np.random.multinomial(n, pvals, size=None) - n tajribalar soni, pvals ehtimolligi(yig'indisi 1 bo'lishi kerak), size massiv o'lchami
+np.random.exponential(scale=1.0, size=None) - scale o'rtacha qiymat, size massiv o'lchami
+np.random.chisquare(df, size=None) - df erkinlik darajasi, size massiv o'lchami
+np.random.rayleigh(scale=1.0, size=None) - scale tarqalish parametri, size massiv o'lchami
+np.random.pareto(a, size=None) - a shakl parametri, size massiv o'lchami
+np.random.zipf(a, size=None) - a eksponet parametri, size massiv o'lchami
+arr = np.zeros(shape = (2, 4)) - faqat 0 dan iborat massiv yaratadi, shape yozish majburiy
+arr = np.ones(shape = (2, 4)) - faqat 1 dan iborat massiv yaratadi, shape yozish majburiy
+arr = np.arange(1,10,2) - pythondagi range funksiyasi bilan bir hil
+arr = np.dot(arr1,arr2) - ikki massivni bir biriga ko'paytirish uchun ishlatilinadi
+arr = np.sqrt(1) - argumentni kvadrat ildizini beradi
+arr = np.square(1) - argumentni kvadratini beradi
+res = np.where(condition, first_option, second_option) - conditionni argument sifatida oladi va True bo'lsa birinchisini, False bo'lsa ikkinchisini bajaradi
+
+array = arr.astype(np.float64) - arrayni arrni data typeni o'zgartirib saqlaydi
+array = arr[3:5].copy() - arrayga arrdan nusxalaydi va asl massivga ta'sir ko'rsatmaydi
+array = arr.reshape(3,5) - arrayga arr ni 3 ga 5 holatda o'zgartirilganini beradi
+
+np.frompyfunc(func, nin, nout) - func funcksiya, nin kirishlar soni, nout chiqishlar soni
+np.exp(arr) - arrni har bir elementini kvadratini qaytaradi
+np.log(arr) - arrni har bir elementini logarifmini hisobledi (log e ga asosan)
+np.log2(arr) - arrni har bir elementini logarifmini hisobledi (log 2 ga asosan)
+np.add(arr1,arr2) - arr1 va arr2 ni har bir elementini mos ravishda bir biriga qo'shib beradi
+np.subtract(arr1,arr2) - arr1 dan arr2 ni har bir elementini mos ravishda ayrib beradi
+np.trunc(arr) - arrni yaxlitlab beradi
+np.round(arr) - arrni yaxlitlab beradi
+np.multiply(arr1,arr2) - arr1 va arr2 ni har bir elementini mos ravishda bir biriga ko'paytirib beradi
+np.prod(arr) - arr ni har bir elementini ko'paytirib boradi
+np.maximum(arr1,arr2) - arr1 va arr2 ni har bir elementini mos ravishda taqqoslaydi va kattasini qaytaradi
+np.lcm.reduce(arr1, arr2) - eng kichik umumiy bo'linuvchini topib beradi
+np.gcd.reduce(arr1, arr2) - eng kichik umumiy bo'luvchisini topib beradi
+np.sign(arr) - manfiy qiymatni -1, musbat qiymatini 1 ga o'zgartirib qaytaradi
+np.isnan(arr) - arr tarkibida NaN bo'lsa true, bo'lmasa false qaytaradi
+np.sum(arr) - arrning umumiy yig'indisini chiqaradi
+np.cumsum(arr) - har bir elementning oldingi yig'indisini hisoblab o'zini qo'shib yigib boradi
+np.prod(arr) - arrning umumiy ko'paytmasini chiqaradi
+np.cumprod(arr) arr ni har bir elementini ko'paytirib boradi
+np.mean(arr) - arrning o'rtacha qiymatini hisoblab beradi
+np.max(arr) - arrning eng katta qiymatini qaytaradi
+np.min(arr) - arrning eng kichik qiymatini qaytaradi
+np.sort(arr) - arrni tartiblab beradi
+np.unique(arr) - arrdagi takrorlanmas elementlarni beradi, takrorlansa ham faqat bittasini chiqaradi, sorted holatda beradi
+np.isin(arr, 1) - arr ichida 1 mavjud bo'lsa True, bo'lmasa false qaytaradi
+np.setdiff1d(arr1, arr2) - arr2da mavjud bo'lmagan arr1da bor bo'lgan ma'lumotlarni chiqaradi, takrorlansa faqat bittasini chiqaradi
+np.save("file_name.npy", arr) - ikkilik sanoq sistemasi uchun yozilgan ma'lumotlarni saqlash
+np.load("file_name.{file_type}") - mavjud fileni ko'rish uchun 
+np.savez("file_name.npz", a=arr1, b=arr2) - ikkita ma'lumotlarni saqlash uchun
+np.savez_compressed("file_name.npz", a=arr1, b=arr2) - ikkita ma'lumotni siqilgan holatda saqlash uchun
+np.abs(-1) - har qanday sonning musbat qiymatini qaytaradi manfiy bo'lsa ham
+arr1, arr2 = modf(arr) - arrni har bir elementini butun va qoldiq qismlarga ajratib, arr1 va arr2ga tenglaydi (arr1=qoldiq, arr2=butun)
+arr1, arr2 = np.divmod(arr1, arr2) - arr1 ni arr2 ga bo'ladi va qoldi va butun qismlarga ajratib tenglaydi (arr1=qoldiq, arr2=butun)
+arr = np.concatenate((arr1, arr2)) - arr1 ni arr2 ga qo'shib tenglaydi
+arr = np.stack((a,b), axis=1/0) - axisga qarab birlashtiradi
+arr = np.vstack(a,b) - arraylarni vertical(ustma-ust) birlashtiradi
+arr = np.hstack(a,b) - arraylarni horizontal(yonma-yon) birlashtiradi
+arr = np.split(arr1, a) - arr1ni a bo'lakka bo'lish
+
+Arguments
+axis = 0 - horizontal ustunlar belgilanadi
+axis = 1 - vertical qatorlar belgilanadi
