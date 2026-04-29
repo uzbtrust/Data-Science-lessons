@@ -1,0 +1,87 @@
+Themes:
+Kirish
+Matplotlib kirish
+Amaliyot matplotlib
+Seaborn kutubxonasi. Chiziqli grafik
+Ustunli grafik. sns.barplot()
+Heatmap
+Amaliyot lineplot, barplot, heatmap
+Taroqlik grafigi (scatterplot)
+Taroqlik grafigi (scatterplot) 2-qism
+Amaliyot scatterplot
+Taqsimot. Distribution
+Taqsimot. KDE
+Taqsimot. CDE
+Amaliyot Taqsimot grafigi
+Subplot
+Amaliyot Subplot
+Bonus. Lux
+Erkin amaliyot
+Qaysi grafikdan foydalanish kerak
+
+Major themes:
+Kirish, Matplotlib, Seaborn linear plot
+Barplot, Heatmap, Amaliyot
+Scatterplot, Amaliyot
+Distribution, CDE, KDE, Amaliyot
+Subplot va Lux, Amaliyot, Qaysi grafikdan foydalanish
+
+Matplotlib:
+plt.plot(x,y) - oddiy chiziqli grafik chizish
+plt.show() - grafikni ko'rsatish
+plt.title("Title") - grafikka nom berish
+plt.xlabel("x") - x o'qigan nom berish
+plt.ylabel("y") - y o'qigan nom berish
+plt.xticks(rotation=90) - x dagi ticklarni 90 gradusga aylantirish
+plt.yticks(rotation=90) - y dagi ticklarni 90 gradusga aylantirish
+plt.grid() - setka qo'yish
+plt.figure(figsize=(10,4) - grafik o'lchami
+plt.legend(['a']) - chiziqni ifodalovchi text qo'shish
+plt.savefig("file_name.png") - grafikni saqlab olish
+plt.minorticks_on() - ko'proq setka berish
+plt.subplot(2,1,2) - grafik qatori/grafik ustuni/grafik tarib raqami bo'yicha grafiklar chizish
+fig, ax = plt.subplots(2, 2) - bir qancha grafiklarni chizish
+fig.suptitle("Graph") - bir qancha grafiklarlga nom berish
+ax[0,0].set_title("Graph") - bir qancha grafiklarga bir-ma bir nom berish
+
+Arguments
+linewidth=1 - chiziq qalinligi
+linestyle="--" - chiziq stili
+color="#FFD700" - chiziq rangi
+marker="o" - son bor joylarga belgi qo'yadi
+alpha=1 - shaffofligi
+loc[0] - legend textni joylashtirish
+fontsize="x-large" - font o'lchami
+labels=['a'] - nom berish
+ticks - ticklar sonini belgilash
+which='major/minor/both' - setka berganda turi
+
+Seaborn
+sns.lineplot(data=df) - oddiy chiziqli grafik chizish
+sns.barplot(x=df.index, y=df.['a'], data=df) - bar graf chizish
+sns.heatmap(data=df.unstack(level=0), cmap="YlGnBu", linewidths=1, square=True) - heatmap chizish
+sns.scatterplot(data=df, x=df['a'], y=df['b']) - tarqoqlik grafigini chizish
+sns.regplot(data=df, x=df['a'], y=df['a']) - korrelyatsiya chizig'ini chizish
+sns.swarmplot(data=df, x='a', y='a') - scatterplotni boshqacha variantini chizish, 16m 24s
+sns.histplot(data=df, x='a') - histogramma yaratish
+sns.displot(data=df, x='a') - distribution yaratish
+sns.kdeplot(data=df, x='a') - KDE distribution yaratish
+sns.pairplot(df[['a','b']]) - hamma columnlarni bir birga nisbata scatter plot
+
+Arguments
+s=10 - scatterplotda nuqtalar o'lchami
+hue='a' - biror bir columnga asoslanib rang berish
+data=df - ma'lumot sifatida dataframeni kiritish
+x=df['a'] - x o'qiga ma'lumot berish
+y=df['a'] - y o'qiga ma'lumot berish
+cmap="YlGnBu" - heatmap rangini belgilash
+linewidths=1 - heatmap chiziq qalinligi
+square=True - heatmapni to'rtburchak qilish
+style='a' - biror bir columnga asoslanib shapelarni o'rgartirish
+height=5 - displotga balandlik berish
+aspect=2 - displotga uzunligini martada berish
+multiple='stack' - displotda ustunlarni ustma ust qo'yish
+col='a' - har bir turdagi graphni har hil qib chiqarish
+kind='kde' - displotda KDE turdagi grafik chizish
+kde=True - kde va histogrammani bir vaqtda chizish
+shade=True - KDE ga soya berish

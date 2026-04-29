@@ -1,0 +1,23 @@
+Themes:
+Kirish
+k-NN
+Classificatorni baholash. Jaccard index
+Classificatorni baholash. Confusion matrix (Precision, Recall)
+k-NN. scikit-learn
+k-NN. Eng yaxshi k tanlash
+Portfolio uchun amaliyot. Diabot kasalligiga tashxis qo'yish
+Decision Tree algoritimi
+Decision Tree Grafik
+Decision Tree Hyperparameters
+Random Forest
+Logistic Regression
+Qaysi modelni tanlash
+
+Major Theme:
+K-NN
+Baholash
+K-NN scikit-learn va k value
+Portfolio uchun amaliyot
+Decision Tree
+Random Forest
+Logistic Regression va model selection

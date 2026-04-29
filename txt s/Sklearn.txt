@@ -1,0 +1,28 @@
+Module
+from sklearn.model_selection import train_test_split - test va train setni olish
+from sklearn.model_selection import StratifiedShuffleSplit - test va train setni balanced qib olish
+from sklearn.impute import SimpleImputer - Barcha nan qiymatlarni qaysidir strategiya orqali to'ldirish
+from sklearn.preprocessing import OrdinalEncoder - matnlarni sonlarga aylantirish
+from sklearn.preprocessing import OneHotEncoder - matnlarni matritsaga aylantirish
+from sklearn.preprocessing import MinMaxScaler - normalizatsiya
+from sklearn.pipeline import Pipeline - pipeline chaqirish
+from sklearn.compose import ColumnTransformer - full pipeline
+
+train_set, test_set = train_test_split(df, test_size=0.2, random_state=42) - test va train setga ajratish, random_state orqali fixlab qo'yamiz
+imputer = SimpleImputer(strategy="median") \
+imputer.fit(housing) - Barcha nan qiymatlarni qaysidir strategiya orqali to'ldirish
+ordinal_encoder = OrdinalEncoder() \
+housing_cat_encoded = ordinal_encoder.fit_transform(housing_cat) - matnlarni sonlarga aylantirish
+cat_encoder = OneHotEncoder() \ 
+housing_cat_1hot = cat_encoder.fit_transform(housing_cat) - matnlarni matritsaga aylantirish
+scaler = MinMaxScaler() \ 
+scaler.fit_transform(housing_num) - normalizatsiya
+num_pipline = Pipeline([ \
+    ('imputer', SimpleImputer(strategy='median')), \
+    ('attribs_adder', CombinedAttributesAdder()), \
+    ('std_scaler', StandardScaler()) \ 
+]) - pipeline
+full_pipeline = ColumnTransformer([ \
+    ('num', num_pipline, num_attribs), \
+    ('cat', OneHotEncoder(), cat_attribs) \
+]) - full pipeline

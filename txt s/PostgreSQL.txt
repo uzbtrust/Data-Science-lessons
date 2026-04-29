@@ -1,0 +1,80 @@
+Themes:
+Kirish
+Windows'ga PostgreSQL o'rnatish
+PostgraSQL bilan tanishuv
+Ma'lumotlar va jadvallar
+Ma'lumotlar ombori (DB) yaratish
+Ma'lumot turlari
+Foydali buyruqlar
+Ma'lumot kirgizish
+Null va standart (default) qiymatlar
+SELECT. Kirish
+Taqqoslash operatorlari
+Buyruqlarni jamlash
+LIKE, BETWEEN, IN
+ORDER BY, MIN, MAX, GROUP BY
+UPDATE
+DELETE
+Jadval dizayn
+PRIMARY KEY
+ALTER TABLE
+SEPARATE TABLE
+Jadvallar o'rtasidagi munosabat
+Munosabat Turlariga misol
+Buyruqlarni jamlash
+SQL va Python
+So'ngso'z
+
+Major Theme:
+PostgreSQL ni o'rnatish va table yaratish
+Table ustida amallar va taqqoslash operatorlari
+LIKE, BETWEEN, IN, ORDER BY, MIN, MAX, GROUP BY
+UPDATE, DELETE
+Jadval dizayn, PRIMARY KEY
+ALTER TABLE
+SEPARATE TABLE
+
+\l - bazalar ro'yhati
+\du - userlar ro'yhat
+\c base_name - bazaga ulanish
+\d - db dagi tablelarni ko'rish
+\d table_name - tableni ichidagi ma'lumotlarni ko'rish
+
+CREATE DATABASE base_name - yangi db yaratish
+CREATE TABLE table_name ( column_name type(number_of_symbols) ) - yangi jadval yaratish
+DROP DATABASE base_name - db ni o'chirib yuborish
+DROP TABLE table_name - tableni o'chirib yuborish
+INSERT INTO table_name (column_name) VALUES (value) - tablega ma'lumot kirgazish
+SELECT * FROM table_name - jadvaldagi ma'lumotlarni ko'rish
+SELECT column_name FROM table_name - biror bir ustundagi ma'lumotni ko'rish
+DELETE FROM table_name WHERE column_name = 'value' - ma'lumotni o'chirish
+UPDATE table_name SET column_name = 'value', column0_name = 'value' WHERE column1_name = 'value' - ma'lumotni yangilash
+ALTER TABLE table_name ADD COLUMN column_name - yangi column qo'shish
+ALTER TABLE table_name DROP COLUMN column_name - columnni o'chirish
+ALTER TABLE table_name RENAME TO table_name - yangi nom berish
+ALTER TABLE table_name RENAME column_name TO new_name - columnga yangi nom berish
+ALTER TABLE table_name ALTER COLUMN column_name TYPE TEST- column typeni o'zgartirish	
+
+Additional
+NOT - biror bir buyruqni teskari qilish
+NOT NULL - qiymat berilme ketsa error beradi
+DEFAULT value - agar ma'lumot kiritilmasa o'zi valueni qiymat sifatida saqlaydi
+WHERE column_name = value - biror bir ma'lumotni aniq berish
+AND - va bilan bir hil
+OR - yoki bilan bir hil
+LIKE '%m%n%' = biror bir so'zga o'xshash. Fozi boshida bo'sa undan olding harf bor, o'rtada bo'sa o'rta, orqa bo'sa undan keyin
+BETWEEN value1 AND value2 - ikki value o'rtasidagi qiymatni aniqlash
+IN ('value') - value mavjud bo'lgan qiymatlarni olish
+ORDER BY column_name - column name bo'yicha sort qiladi
+ORDER BY column_name DESC - column name bo'yicha teskari sort qiladi
+SELECT column_name, SUM(column_name) FROM table_name - column nameni sumini beradi
+SELECT column_name, MAX(column_name) FROM table_name - column nameni eng katta qiymatini beradi
+SELECT column_name, MIN(column_name) FROM table_name - column nameni eng kichik qiymatini beradi
+SELECT column_name, AVG(column_name) FROM table_name - column nameni o'rta arifmetik qiymatini beradi
+SELECT column_name, COUNT(column_name) FROM table_name - column namedagi elementlar sonini beradi
+SELECT * FROM table_name GROUP BY column_name - column_name dagi valuelar bo'yicha guruhlaydi
+SELECT DISTINCT column_name FROM table_name - jadvaldagi columndan takrorlanganlarni olib tashlab beradi
+LIMIT 5 - jadvalni eng tepasidan 5 ta qatorni beradi
+PRIMARY KEY - qatorga ma'lumot takrorlanishga yo'l qo'ymaydi
+SERIAL - dastur o'zi noyob raqam beradi
+REFERENCES table_name (column_name) - qaysidir columnga bog'lash

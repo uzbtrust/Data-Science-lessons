@@ -1,0 +1,27 @@
+Theme:
+Kirish
+.dropna()
+.fillna()
+takroriy qiymatlarni o'chirish
+.map()
+.replace() va .rename()
+.cut() va .qcut()
+.groupby()
+G'ayratabiiy qiymatlar bilan ishlash
+Jadvaldan tasodifiy qiymat olish
+Kaggle bilan tanishuv
+Python datetime
+Matnni datetime formatiga o'tkazish
+Datetime bilan ishlash
+TEST 1 .dropna()
+TEST 2 .fillna()
+Amaliyot Tayyorlash
+
+Major theme
+nan qiymatlar bilan ishlash va takroriy qiymatlarni o'chirish
+map, rename va replace bilan ishlash
+cut, qcut va groupy bilan ishlash
+g'ayratabiiy va tasodifiy qiymatlar bilan ishlash
+Kaggle bilan tanishuv
+Datetime
+Amaliyot

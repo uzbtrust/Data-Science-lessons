@@ -1,0 +1,13 @@
+Themes:
+Klasterlash nima
+k-means algoritmi
+amaliyot k-means
+Iyerarxik algoritm
+amaliyot iyerarxik
+dbscan
+
+Major themeS:
+Klasterlash nima
+k-means
+iyerarxik
+dbscan

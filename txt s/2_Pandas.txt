@@ -1,0 +1,175 @@
+Theme:
+Series ma'lumotlar tuzilmasi
+Lug'atdan Series yaratish
+Series metodlari
+DataFrame ma'lumotlar tuzilmasi
+DataFrame ustunlari
+Lug'atdan DataFrame yaratish
+Indekslar
+Indeks metodlar
+Qayta indekslash
+Qator va ustunlarni tashlab yuborish
+Elementlarni tanlash Series
+Elementlarni tanlash DataFrame
+.loc/.iloc va .at/.iat
+Amaliyot Series
+Amaliyot DataFrame
+Arifmetik amallar
+Funksiyalarni qo'llash
+Tartiblash
+Reytinglash
+Dataset statistika
+Dataset statistika
+Dataset statistika
+Ma'lumotlarni filtrlash
+Amaliyot Dataset
+Umumiy amaliyot
+
+Major theme:
+Series
+DataFrame
+Indeks
+Qator va ustunlar
+Element tanlash
+Sorting va Rating
+DataSet
+
+Series
+
+Methods
+obj.head() - ma'lumotlarning boshidagi qismigina chiqariladi
+obj.tail() - ma'lumotlarning ohiridagi qismigina chiqariladi
+obj.values - objning qiymatlarini array holatida beradi
+obj.index - indexlarni ko'rsatadi
+obj.isnull() - ma'lumotlar orasida NaN bo'lsa True, bo'lmasa False qaytaradi
+obj.notnull() - ma'lumotlar orasida NaN bo'lmasa True, bo'lsa False qaytaradi
+obj.name - ma'lumotlarning qiymatlariga nom berish
+obj.index.name - m'alumotlarning indexlariga nom ber
+obj.idxmax() - eng katta qiymatni indexini chiqarish
+obj.idxmin() - eng kichik qiymatni indexini chiqarish
+obj.argmin() - eng kichik qiymatni indexini chiqarish
+obj.argmax() - eng katta qiymatni indexini chiqarish
+obj.sort_values() - qiymatlari bo'yicha tartiblash
+obj.sort_index() - indexlari bo'yicha tartiblash
+obj.value_counts() - bir qiymat necha marta borligini aniqlash
+obj.unstack() - irarxik seriesni, oddiy dataframega o'tkazadi
+
+Arguments
+index=['a', 'b', 'c', 'd', 'e'] - indexni qo'lda berish
+inplace=True/False - komanda bajarilayotganda haqiqiysiga ta'sir qilish yoki yo'qligini belgilas
+
+DataFrame
+
+Methods
+df.head() - ma'lumotlarning boshidagi qismigina chiqariladi
+df.tail() - ma'lumotlarning ohiridagi qismigina chiqariladi
+df.sample() - tahminiy ma'lumotlar chiqariladi
+df.shape - ma'lumotlarning o'lchamlari chiqariladi
+df.T - index va ustunlarni almashtiradi
+df.transpose() - index va ustunlarni almashtiradi
+df.values - objning qiymatlarini array holatida beradi
+df.index - indexlarni ko'rsatadi
+df.columns - ma'lumotlarning columnlarini ko'rsatadi
+df2.index.isin(df.index) - dfdagi ma'lumotlar df2da bor yo'qligini qaytaradi
+df2.index.difference(df.index) - df2 bilan dfni farqlaydi va df da mavjud bo'lmagan qiymatlarni chiqaradi
+df2.index.union(df.index) - df2 va df ma'lumotlarini jamlab beradi
+df.index.delete(0) - ma'lumotni o'chiradi
+df.index.drop('a') - ma'lumotni o'chiradi
+df.index.insert(0,'a') - ma'lumotni qo'shadi
+df.index.is_unique - ma'lumotlar qaytarilgan bo'lsa False, qaytarilmagan bo'lsa True qaytaradi
+df.index.unique() - qaytarilmagan ma'lumotlarni chiqaradi
+df.reindex(arr) - dfni arrga bog'langan holda qayta indexlaydi
+df.reindex(arr, method='nearest') - df ni arrga bog'langan holda to'g'irlaydi, mavjud bo'lmagan qiymatlarni mavjudga yaqiniga bog'liq holda to'ldiradi
+df.reindex(arr, method='ffill') - df ni arrga bog'langan holda to'girlaydi, mavjud bo'lmagan qiymatlarni birinchisida nusxa olib to'ldirad
+df.set_index(columns=0) - dfni indexini o'rnatadi, biror narsaga bog'langan holda
+df.loc[[1,2,3],['a','b','c']] - kerakli ustun va qatorlarni ajratib olish (qator/ustun) (o'zini shakli bo'yicha)
+df.iloc[[0,1,2],[0,1,2]] - kerakli ustun va qatorlarni ajratib olish (qator/ustun) (index raqami bo'yicha)
+df.at[1,'a'] - kerakli bir dona ma'lumotni ajratib olish (qator/ustun) (o'zini shakli bo'yicha)
+df.iat[0,0] - kerakli bir dona ma'lumotni ajratib olish (qator/ustun) (index raqami bo'yicha)
+df['a'].to_numpy() - biror bir ma'lumotni numpyga o'tkazish
+df1.add(df) - df1ga df ni qo'shish
+df1.radd(df) - dfga df1 ni qo'shish
+df1.sub(df) - df1dan df ni ayrish
+df1.rsub(df) - dfdan df1 ni ayrish
+df1.div(df) - df1ni dfga bo'lish
+df1.rdiv(df) - dfni df1ga bo'lish
+df1.floordiv(df) - df1ni dfga bo'lish va butun qismini olish
+df1.rfloordiv(df) - dfni df1ga bo'lish va butun qismini olish
+df1.mul(df) - df1ni dfga ko'paytirish
+df1.rmul(df) - dfni df1 ga ko'paytirish
+df1.pow(df) - df1ning df darajasi
+df1.rpow(df) - dfning df1 darajadi
+df.mean() - dfni o'rtacha qiymatini hisoblash
+df.sum() - barcha qiymatlarni qo'shish	
+df.count() - NaN bo'lmagan qiymatlar soni
+df.median() - qiymatlar medianasini hisoblash
+df.mad() - 	
+df.idxmax() - eng kichik qiymatni indexini topsih
+df.idxmin() - eng katta qiymatni indexini topish
+df.apply(f) - dfga f funksiyasini qo'llaydi
+df.map(f) - dfning har bir elementiga f funksiyasini qo'llaydi
+df.sort_index() - indexlari bo'yicha tartiblash
+df.sort_values(by='a') - qiymatlari bo'yicha tartiblash, by berish majburiy
+df['rating'] = df['price'].rank() - narxi bo'yicha ratinglash 
+df['rating'] = df['price'].rank(method='min'/'max') - narxi bo'yicha ratinglash, min eng pastiga baland bal berish 
+df.info() - jadval ma'lumot soni va turi haqida ma'lumot
+df.describe() - jadval haqida umumiy ma'lumot
+df.corr() - jadval umumiy korrelyatsiyasi
+df['a'].corr(df['b']) - a bilan b korrelyatsiyasini hisoblaydi
+df.corrwith(df['a']) - a bilan butun jadvalni korrelyatsiyasini hisoblaydi
+df['a'].unique() - a index yoki columndagi ma'lumotlarni bittalab chiqaradi
+df['a'].value_counts() - bir qiymat necha marta borligini aniqlash
+df.groupby('a') - a ustundagi elementlarni bitta qiladi, yani takrorlanganlarini qo'shadi
+df.to_csv('file.csv') - fileni csv formatga o'tkazish
+df.to_sql('table_name', link_db) - dataframeni sqlga o'tkazish
+df.isnull() - ma'lumotlar orasida NaN bo'lsa True, bo'lmasa False qaytaradi
+df.notnull() - ma'lumotlar orasida NaN bo'lmasa True, bo'lsa False qaytaradi
+df.dropna() - NaN bo'lgan qatorlarni tashlab yuborish
+df.duplicated() - Takrorlanga qatorlarga True beradi
+df.drop_duplicates() - Takrorlanga qatorlarni tashlab yuboradi, qavs ichiga ustun yozib aynan o'sha qator bo'yicha tekshirish mumkin
+df['a'].map(dict) - a ustunning har bir qiymatiga map funksiyasini argumentini qo'llayd
+df.replace('one', 1) - df dagi barcha one qiymatlarni 1 ga o'zgartiradi
+df.rename(columns={'a','b'}) - columns yoki indexdagi barcha a qiymatlarni b ga o'zgartiradi
+df.groupby("a").mean(numeric_only=True) = a column bo'yicha guruhlaydi, . bilan funksiyani ham qo'shish kerak, numeric_only shart 	
+df.apply(np.abs) - biror bir funksiyasni qo'llash uchun
+df.stack() - irarxik seriesdan o'tgan DataFrameni qayta irarxik holatga qaytaradi
+df.swaplevel('a', 'b') - iyerarxik indexlarni o'rnini almashtiradi axis=1 bo'yicha
+
+pd.concat(df, pd.DataFrame(data)) - biror bir DataFramega ma'lumot qo'shish uchun
+pd.Index(['a','b','c']) - alohida index obyekti yaratadi
+pd.read_csv() - vergul bilan ajratilgan fileni o'qish
+pd.read_table() - bo'sh joy bilan ajratilgan fileni o'qish
+pd.read_excel() - excel fileni o'qish
+pd.read_clipboard() - ko'chirilgan(xotiradagi) jadvalni o'qish
+pd.read_hdf() - HDF5 filelarni o'qish
+pd.read_html() - HTML filelarni o'qish
+pd.read_json() - JSON filelarni o'qish
+pd.read_pickle() - Pickle filelarni o'qish
+pd.read_sql() - SQL Querydan qaytgan filelarni o'qish (SQL Alchemy bilan ishlaydi)	
+pd.read_csv('file.csv').squeeze("columns") - filedan o'qishda DF ni Seriesga o'tkazish
+pd.HDFStore('filename.h5') - HDF5 file yaratish
+pd.cut(a, column_bins/3) - a columnni, column_bins bo'yicha guruhlaydi, column_bins o'rniga nechta guruhga bo'lishni ham yozish mumkin
+pd.qcut(a, column_bins/3) - a columnni, column_bins bo'yicha guruhlaydi, column_bins o'rniga nechta guruhga bo'lishni ham yozish mumkin, guruhlarda elementlar soni teng bo'ladi
+pd.to_datetime(df['a'], format="%d/%m/%Y") - a columnni datetime typega o'tkazish, formatga sana formati beriladi
+pd.pivot_table(df, index=['a','b'], values=['c','d']) - katta dataframeni irarxik holatga o'tkazadi
+pd.merge(a, b, "id", how="inner/outer/left/right", left/right_index, left/right_on='a') - a va b df larni birlashtiradi, on ga esa ikkalasidagi umumiy qiymat yoziladi, inner yo'q ma'lumot kiritilmayd, outer, yo'q m'alumot ham kiritiladi, left faqat a df ni yo'q ma'lumotlari olinadi, right faqat b df ni yo'q ma'lumotlari olinadi, left_index chap tarafdagi df ni indexini oladi, left_on alohida column beradi umumiy qiymat sifatida
+
+
+arr.isin(df) - arr dfni ichida bor yo'qligini ko'rsatadi
+
+Arguments
+columns=['a', 'b', 'c', 'd', 'e'] - ustunlarni qo'lda berish
+index=['a', 'b', 'c', 'd', 'e'] - indexni qo'lda berish
+inplace=True/False - komanda bajarilayotganda haqiqiysiga ta'sir qilish yoki yo'qligini belgilas
+fill_value=0 - funksiya bajarilayotganda qolib ketgan qiymatlarni qaysi son yoki harf bil to'ldirish
+axis = 0 - horizontal ustunlar belgilanadi
+axis = 1 - vertical qatorlar belgilanadi
+ascending = True/False - tartiblashni turi. True o'sish tartibidi, False aksincha
+sep="," = fileni o'qishda uni qanday ajratilganligini belgilash
+index_col=0/'a' - fileni o'qishda index sifatida qaysi ustunni belgilash
+nrows=5 - fileni nechta qatori ko'rsatilishini belgilash
+index=True/False - fileni saqlashda index bilan saqlash yoki saqlamaslik
+thresh=5 - chegara qo'yish
+subset['a','b'] - aynan biror bir columni belgilash
+labels = 'name' - guruhlayotganda nom beradi
+replace=True - sample qib olayotganda ma'lumotlar qaytarilishi mumkin	

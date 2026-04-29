@@ -1,0 +1,34 @@
+Themes:
+Kirish 
+Fayldan o'qish
+Faylga yozish
+HDF5 formati
+Veb-sahifalardan o'qish
+JSON va API dan qo'sih
+API nima?
+JSON nima?
+Ma'lumotlar ombori. Kirish
+PostgreSQL o'rganish!
+SQL Kirish
+SQLite omboriga ulanish
+Jadvalni DFga o'qish
+Tartiblash (ORDER BY) va saralash (DISTINCT)
+Filtrlash (WHERE)
+SQLite 1-qism
+DataFrameni SQL jadvaliga o'tkazish
+SQL jadval yaratish, ma'lumotlar qo'shish
+SQL jadvalni yangilash va o'chirish
+SQL buyruqlarni f-string yordamida yozish
+SQLite 2-qism
+Foydali buyruqlar
+Between, in va like
+SQLite 3-qism
+
+Major theme:
+Fayllar bilan ishlash, HDF5 format
+Veb sahifalardan o'qish, JSON va API
+PostgreSQL
+SQLite 1- qism
+SQLite 2- qism
+SQLite 3- qism
+Amaliyot

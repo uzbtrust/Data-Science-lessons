@@ -1,0 +1,17 @@
+Themese:
+Iyerarxxik indeksli ma'lumotlar to'plami
+.stack() va unstack()
+Iyerayxik indekslash
+Iyerarxik ustunli ma'lumotlar to'plami
+.swaplevel(), .sort_index() - iyerarxik indeksli ma'lumotda, indekslarni almashtirish
+Ma'lumotlar to'plamlarini uyg'unlashtirish
+Misol asosida ma'lumotlarni uyg'unlashtirish
+Ma'lumotlarni ulash .concat()
+Uzun ma'lumotlar to'plamidan keng ma'lumotlar to'plamiga
+Amaliyot
+
+Major themes:
+Iyerarxik indekslash va ustunlar
+Ma'lumotlar to'plamlarni uyg'unlashtirish
+Ma'lumotlarni ulash va keng ma'lumotlarga
+Amaliyot

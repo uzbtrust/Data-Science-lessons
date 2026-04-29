@@ -1,0 +1,32 @@
+Themes:
+Deep Learning kirish
+Tayyorgarlik ko'rish
+Birinchi model
+Klassik dastur, ML va DL misolida tahlil qilish
+Transfer learning
+Loyiha 1-qism
+Loyiha 2-qism
+Loyiha
+Semantic Segmentation
+NLP
+Tabular
+LoanDecision
+Underhood 1
+Underhood 2
+Underhood 3
+Underhood 4 (ML steps)
+Underhood 4 (GD SGD MiniBatch)
+
+Major themes:
+Kirish, tayyorgarlik ko'rish
+Birinchi model
+klassik dastur
+Loyiha 1-qism
+Loyiha 2-qism
+Loyiha
+Semantic Segmentation
+NLP
+Tabular, LoanDecision
+Underhood 1, 2
+Underhood 3
+Underhood 4

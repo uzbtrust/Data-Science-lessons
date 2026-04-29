@@ -1,0 +1,21 @@
+Themes:
+Kirish
+Simple Linear Regression
+Simple Linear Regression. Vazifa
+Amaliyot
+Simple LR. scikit-learn
+Amaliyot scikit-learn Simple LR
+Multiple Linear Regression
+Multple Linear Regression scikit-learn
+Non-linear Regression
+Polynomial Regression
+Curve_fit
+Underfitting va Overfitting
+
+Major Themes:
+Simple Linear regression va Amaliyot
+Scikit-learn Simple LR va Multiple Linear
+Non-linear va Polynomial
+Cuver_fit va underfitting va overfitting
+
+

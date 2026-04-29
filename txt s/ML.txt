@@ -1,0 +1,10 @@
+Themes:
+Machine learning nima?
+Supervised learning
+Unsupervised learning
+Semi-supervised & Reinforcement learning
+ML o'qitish usullari va qiyinchiliklari
+Modelni sinash va natijalarni tasdiqlash
+
+Major:
+All

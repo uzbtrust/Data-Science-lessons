@@ -1,0 +1,8 @@
+Themes:
+Customer churn nima?
+Customer Churn. Ma'lumotlar tahlili
+Logistic regression, SVM. ROC curve
+Decision Tree, Random Forest, XGBoost
+
+Major:
+All

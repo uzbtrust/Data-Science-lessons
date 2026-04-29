@@ -1,0 +1,39 @@
+Themes: 
+ML loyiha qadamlari
+1-qadam. Analitik yondashuv. Modelni baholash
+2-qadam. Ma'lumotlarni o'rganish. DF bilan tanishuv
+2-qadam. Ma'lumotlarni o'rganish. Grafiklar
+2-qadam. Ma'lumotlarni o'rganish. Train va test set
+2-qadam. Ma'lumotlarni o'rganish. Muvozanatli train/test set
+2-qadam. Ma'lumotlarni o'rganish. Korrelyasiya
+2-qadam. Ma'lumotlarni o'rganish. Yangi parametrlar
+3-qadam. MLga tayyorgarlik. NaN qiymatlar
+3-qadam. MLga tayyorgarlik. NaN qiymatlarni almashtirish
+3-qadam. MLga tayyorgarlik. Matnlar. SimpleEncoder
+3-qadam. MLga tayyorgarlik. Matnlar. OneHotEncoder
+3-qadam. MLga tayyorgarlik. Transformer yasash
+3-qadam. MLga tayyorgarlik. Normalizatsiya (MinMaxScaler)
+3-qadam. MLga tayyorgarlik. Standartizatsiya (StandarScaler)
+3-qadam. MLga tayyorgarlik. Pipeline. Sonlar
+3-qadam. MLga tayyorgarlik. Pipeline. Matnlar
+4-qadam. Machine Learning
+5-qadam. Modelni baholash
+5-qadam. Modelni baholash. Random Forest
+5-qadam. Modelni baholash. Cross-validation
+6-qadam. Taqdimot. Modelni saqlab olish
+Amaliyot. Toshkentdagi uy narxlarini bashorat qilish
+
+Major Theme:
+Intro, DF intro
+DF bilan tanishuv, grafika
+trains va test set, muvozanatli
+korrelyatsiya va yangi paramterlar
+nan qiymatlar
+matnlar
+transformer
+normalizatsiya va standartizatsiya
+pipeline
+machine learning
+modelni baholash
+modelni salqab qolish
+amaliyot
